@@ -41,9 +41,9 @@
     if (!flowCount) {
         flowCount=0.0;
     }
-    UIColor *titleColor=[UIColor whiteColor];
+    UIColor *titleColor=[UIColor blackColor];
     UIFont *titleFont=[UIFont systemFontOfSize:18.0];
-    UIColor *detailColor=[UIColor whiteColor];
+    UIColor *detailColor=[UIColor blackColor];
     UIFont *detailFont=[UIFont systemFontOfSize:12.0];
     
     NSMutableAttributedString *titleString = [[NSMutableAttributedString alloc] initWithString:@"NetworkEye\n"
@@ -78,7 +78,7 @@
         backBt.frame=CGRectMake(10, 27+(isiPhoneX?24:0), 40, 30);
         [backBt setTitle:@"back" forState:UIControlStateNormal];
         backBt.titleLabel.font=[UIFont systemFontOfSize:15];
-        [backBt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [backBt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [backBt addTarget:self action:@selector(backBtAction) forControlEvents:UIControlEventTouchUpInside];
         [bar addSubview:backBt];
         
@@ -86,7 +86,7 @@
         settingsBt.frame=CGRectMake([[UIScreen mainScreen] bounds].size.width-60, 27+(isiPhoneX?24:0), 50, 30);
         [settingsBt setTitle:@"settings" forState:UIControlStateNormal];
         settingsBt.titleLabel.font=[UIFont systemFontOfSize:13];
-        [settingsBt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [settingsBt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [settingsBt addTarget:self action:@selector(rightAction) forControlEvents:UIControlEventTouchUpInside];
         [bar addSubview:settingsBt];
         mainTableView.frame=CGRectMake(0, 64+(isiPhoneX?24:0), [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-64-(isiPhoneX?24:0));
